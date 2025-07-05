@@ -1,0 +1,89 @@
+/*
+Project: Digital Clock with Glowing Effect
+Author: Kamran Javed
+Portfolio: https://kamranjaved.online
+Company: OneDigitalLine
+Website: https://onedigitalline.com
+Email: meet@kamranjaved.online
+License: For personal or client use only. Redistribution prohibited.
+© Kamran Javed. All rights reserved.
+*/
+:root {
+  --gradient-colors: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  --background-color: #000;
+  --display-bg-color: #1b1b1b;
+  --text-color: #fff;
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.clock-wrapper {
+  position: relative;
+  width: 360px;
+  height: 100px;
+  border-radius: 10px;
+  background: var(--gradient-colors);
+  animation: hueRotate 1.5s linear infinite;
+  cursor: default;
+  overflow: hidden;
+}
+
+.clock-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 345px;
+  height: 85px;
+  background-color: var(--display-bg-color);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.clock-time {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: var(--gradient-colors);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hueRotate 1.5s linear infinite;
+}
+
+.clock-wrapper span {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: inherit;
+}
+
+.clock-wrapper span:first-of-type {
+  filter: blur(7px);
+}
+
+.clock-wrapper span:last-of-type {
+  filter: blur(20px);
+}
+
+@keyframes hueRotate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
