@@ -11,7 +11,7 @@ A modern, responsive digital clock with a vibrant, animated glowing border built
 ---
 
 ## 🚀 Demo
-[Live Demo](https://projects.kamranjaved.online/digital-clock-with-colorful-glowing-effect)
+[Live Demo](https://projects.kamranjaved.com/digital-clock-with-colorful-glowing-effect)
 
 ---
 
@@ -48,4 +48,4 @@ A modern, responsive digital clock with a vibrant, animated glowing border built
 
 ---
 
-> Developed with ❤️ by [Kamran Javed](https://kamranjaved.online)
+> Developed with ❤️ by [Kamran Javed](https://kamranjaved.com)
